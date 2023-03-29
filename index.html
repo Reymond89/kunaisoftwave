@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunaisoft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb8ab39ed3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header__navbar">
+                <div class="header__logo-container">
+                    <img class="header__image" src="assets/img/logokanaisoft.png" alt="logo">
+                    <a class="header__logo-title" href="">Kunaisoft</a>
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="header__menu-btn"><i class="fa-solid fa-bars fa-bounce"></i></div>
+            </nav>
+            <section class="hero">
+                <h1 class="hero__title">Potencia tus ventas al menos un 200%</h1>
+                <h4 class="hero__subtitle">Con una pagina web potente</h4>
+            </section>
+            <div class="hero__wave" style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
+        </header>
+        <main>
+            <section class="services">
+                <h3 class="services__title">Nuestros Servicios</h3>
+                <div class="services__wrapper">
+                    <picture class="services__picture-container">
+                        <img class="services__image" src="assets/img/ilustracion.png" alt="ilustration">
+                    </picture>
+                    <div class="services__text">
+                        <h4 class="services__subtitle"> <div class="services__circle">1</div> Los mejores Desarrolladores</h4>
+                        <p class="services__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et quibusdam quo nihil atque fugit?</p>
+
+                        <h4 class="services__subtitle">  <div class="services__circle">2</div> Los mejores servicios</h4>
+                        <p class="services__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et quibusdam quo nihil atque fugit?</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+
+    <script>
+        const menuHamburguesa = document.querySelector('.header__menu-btn');
+        const menuList = document.querySelector('.header__menu');
+
+            menuHamburguesa.addEventListener('click', ()=>{
+            menuList.classList.toggle('mobile-btn');
+        })
+    </script>
+    
+</body>
+</html>
