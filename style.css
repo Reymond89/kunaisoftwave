@@ -76,7 +76,7 @@
 .hero__wave{
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
 }
 /* servicios section */
 .services{
@@ -159,7 +159,6 @@
     .header__menu-btn{
         z-index: 2;
         display: flex;
-        animation-duration: var(--fa-animation-duration,3s);
         justify-content: center;
         align-items: center;
         font-size: 2.4rem;
@@ -167,6 +166,7 @@
     }
     .hero__title{
         font-size: 2rem;
+        margin-bottom: 10px;
 
     }
     .hero__subtitle{
@@ -192,9 +192,17 @@
     .header__menu{
         transition: 0.8s ease;
     }
+    .header__menu-btn .fa-bounce{
+        animation-duration: var(--fa-animation-duration,3s);
+      
+
+    }
     .hero{
-        /* height: 350px; */
+        height: 350px;
         width: 90%;
+        position: relative;
+        left: 0;
+        bottom: 60px;
         margin: auto;
         text-align: center;
        
